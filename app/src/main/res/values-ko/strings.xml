@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Italk</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="version_1_0_0">버전 1.0.0</string>
+
+    <string name="enter_your_email"> 이메일을 입력하세요 </string>
+    <string name="enter_your_name">당신의 이름을 입력</string>
+    <string name="enter_your_password">비밀번호를 입력하세요</string>
+    <string name="logout">로그 아웃</string>
+    <string name="name_not_be_emty">이름은 비워 둘 수 없습니다</string>
+    <string name="Emai_must_right_the_format">잘못된 이메일</string>
+    <string name="Password_is_at_least_6_characters">비밀번호는 6 자 여야합니다</string>
+    <string name="good_job">마침!</string>
+    <string name="Error">오류...</string>
+    <string name="chat">메시지</string>
+    <string name="choose">고르다</string>
+    <string name="camera">카메라</string>
+    <string name="gallery">도서관</string>
+    <string name="change_password">비밀번호 변경</string>
+    <string name="enter_your_old_password">이전 비밀번호를 입력하세요</string>
+    <string name="enter_your_new_password">새 비밀번호를 입력하세요</string>
+    <string name="cancel">취소</string>
+    <string name="update">최신 정보</string>
+    <string name="enter_your_message">메시지를 입력하세요</string>
+    <string name="comment">논평</string>
+    <string name="enter_your_comment">댓글 입력</string>
+    <string name="cofirm">확인</string>
+    <string name="delete">삭제</string>
+    <string name="update_name">이름 업데이트</string>
+    <string name="home">홈페이지</string>
+    <string name="what_are_you_thinking">무슨 생각을 ...?</string>
+    <string name="login">로그인</string>
+    <string name="forgot_password">비밀번호를 잊으 셨나요?</string>
+    <string name="notification">공고</string>
+    <string name="write_post">댓글</string>
+    <string name="confirm_your_password">비밀번호 확인</string>
+    <string name="register">기재</string>
+    <string name="setting">환경</string>
+    <string name="edit_name">이름 수정</string>
+    <string name="update_password">비밀번호 변경</string>
+    <string name="no_notification_here">공지 사항이 없습니다</string>
+    <string name="see_like">좋아하는 사람보기</string>
+    <string name="select">고르다</string>
+    <string name="list_blocked">차단 목록</string>
+    <string name="unblock_succesfuly">성공적으로 차단됨</string>
+    <string name="unblock_message_this_people">이 사람 메시지 차단 해제</string>
+    <string name="block_message_this_people">이 사람의 메시지 차단</string>
+    <string name="enter_friends_need_to_find">검색</string>
+    <string name="update_successful">업데이트 성공</string>
+    <string name="update_failed">업데이트 오류</string>
+    <string name="Comment_your_post">게시물에 댓글 달기</string>
+    <string name="error">오류...</string>
+    <string name="Comment_failed">오류 설명</string>
+    <string name="Post_successful">성공적으로 게시</string>
+    <string name="Please_enable_camera_permissions">카메라 권한을 켜주세요</string>
+    <string name="Please_enable_gallery_permissions">라이브러리 권한을 활성화하십시오</string>
+    <string name="Please_enter_the_article_description_or_image">기사 설명 또는 사진을 입력하십시오</string>
+    <string name="Loading">처리 중 ...</string>
+    <string name="Delete">삭제</string>
+    <string name="Edit">수리</string>
+    <string name="View_Detail">프로필 페이지보기</string>
+    <string name="Delete_successful">성공적으로 삭제되었습니다</string>
+    <string name="Like_your_post">당신의 게시물처럼</string>
+    <string name="Please_Enter_comment">의견을 입력하십시오</string>
+    <string name="Comment_successful">댓글 성공 </string>
+    <string name="Offline_at"> 오프라인 상태 : </string>
+    <string name="Please_Enter_your_message"> 메시지를 입력하세요 </string>
+    <string name="noSuport">장치가이 기능을 지원하지 않습니다</string>
+    <string name="Say_something">말하다</string>
+    <string name="LOGIN">로그인</string>
+    <string name="REGISTER">기재</string>
+    <string name="Sent_a_photo">이미지 보내기</string>
+    <string name="Email_cannot_be_empty">이메일은 비워 둘 수 없습니다</string>
+    <string name="Login_succesful">성공적으로 로그인했습니다</string>
+    <string name="Login_ailed">로그인 오류</string>
+    <string name="Password_must_not_be_empty">비밀번호는 비워 둘 수 없습니다</string>
+    <string name="Name_must_be_greater_than_6_characters">이름은 6 자 이상이어야합니다</string>
+    <string name="You_clicked_button">로그인하려면 클릭하세요</string>
+    <string name="Authentication_failed">오류</string>
+    <string name="Seen">보았다</string>
+    <string name="Sent">보냄</string>
+    <string name="Deleted">삭제됨</string>
+    <string name="You_just_only_delete_your_messages">메시지를 삭제할 수만 있습니다</string>
+    <string name="Post">수출</string>
+    <string name="select_picture">이미지 선택</string>
+    <string name="description">기술...</string>
+    <string name="your_status">귀하의 상태 ...</string>
+    <string name="Search">검색</string>
+    <string name="View_profile">프로필 페이지보기</string>
+    <string name="Delete_failed">오류</string>
+    <string name="Recover">확인</string>
+    <string name="Like"> 인기</string>
+    <string name="PeopleLike">좋아하</string>
+    <string name="peoplelikexml">" " 좋아하</string>
+    <string name="commentpeoplexml">0 댓글</string>
+    <string name="Logout">로그 아웃</string>
+    <string name="Confirm">확인</string>
+    <string name="Are_you_sure">확실합니까 ?</string>
+    <string name="Enter_your_name">이름을 입력하세요</string>
+    <string name="Name_must_be_characters">이름은 숫자가없는 문자 여야합니다</string>
+    <string name="like_post">기사를 살짝 밀다</string>
+    <string name="profile">개인 페이지</string>
+    <string name="me">나는</string>
+    <string name="friend">친구</string>
+    <string name="Unblock_Succesfuly">성공적으로 차단되었습니다</string>
+    <string name="You_can_send_message">메시지를 보낼 수 없습니다</string>
+    <string name="please_write_something">써주세요 ...</string>
+    <string name="done">뛰어난</string>
+    <string name="Confirm_your_password">비밀번호 확인</string>
+    <string name="Incorrect">동의하기</string>
+
+    <string name="change_name">이름을 바꿔라 </string>
+    <string name="list_user_blocked">차단 목록</string>
+    <string name="delete_your_account">계정 삭제</string>
+    <string name="report_problem">문제 신고</string>
+
+    <string name="Do_you_want_delete_this_notification">이 메시지를 삭제 하시겠습니까?</string>
+    <string name="last_day">어제</string>
+
+    <string name="name">이름</string>
+    <string name="time">시각</string>
+    <string name="language">언어</string>
+    <string name="Please_check_your_mail">이메일을 확인하세요</string>
+    <string name="Email_does_not_exist">이메일이 없습니다.</string>
+    <string name="Sending_your_email">이메일로 보내는 중 ...</string>
+    <string name="account_and_suport">계정 및 지원</string>
+    <string name="you_have_no_messages_here">채팅이 없습니다</string>
+    <string name="Do_you_want_delete_this_comment">이 댓글을 삭제 하시겠습니까?</string>
+
+    <string name="You_not_delete_this_commment">이 댓글은 삭제할 수 없습니다.</string>
+    <string name="Send_a_photo">이미지 보내기</string>
+    <string name="Send_email">이메일을 보내</string>
+    <string name="Typing">Đang nhập...</string>
+
+    <string name="not_have_any_comment">아직 코멘트가 없습니다</string>
+    <string name="please_be_the_first_comment">가장 먼저 댓글 달기</string>
+
+    <string name="this_people_no_status">상태 없음</string>
+    <string name="no_account_here">목록에 계정이 없습니다</string>
+    <string name="Are_you_want_to_download_this_image">다운로드 하시겠습니까?</string>
+    <string name="Download">다운로드</string>
+    <string name="detail">세부 묘사</string>
+
+    <string name="group_name">그룹 이름</string>
+    <string name="group_role">그룹 역할</string>
+    <string name="create_group">그룹 생성</string>
+    <string name="Enter_group_name_need_to_find">찾을 그룹 이름을 입력하세요</string>
+
+
+    <string name="Remove_Admin">관리자 제거</string>
+    <string name="Remove_User">사용자 제거</string>
+    <string name="Make_Admin">관리자로 설정</string>
+    <string name="Add_this_user_into_this_group">이 사용자를이 그룹에 추가 하시겠습니까?</string>
+    <string name="Add">더하다</string>
+    <string name="The_user_is_no_longer_admin">사용자는 더 이상 관리자가 아닙니다.</string>
+    <string name="The_user_is_now_admin">사용자는 이제 관리자입니다.</string>
+    <string name="Added_successfully">성공적으로 추가되었습니다.</string>
+    <string name="Add_member">회원 추가</string>
+    <string name="Creator_of_Groug">그룹 생성자 ...</string>
+
+    <string name="Creator">창조자</string>
+    <string name="Member">회원</string>
+    <string name="Admin">관리자</string>
+
+    <string name="settings">설정</string>
+    <string name="info">정보</string>
+    <string name="edit_group">그룹 수정</string>
+    <string name="group_name_require">그룹 이름이 필요합니다...</string>
+    <string name="group_info_update">그룹 정보가 업데이트되었습니다 ..</string>
+    <string name="list_member">목록 회원</string>
+
+    <string name="Search_group">그룹 검색</string>
+
+    <string name="leave_group">그룹을 떠나다</string>
+    <string name="change_group_info">그룹 정보 변경</string>
+    <string name="Delete_group">그룹 삭제</string>
+    <string name="Are_you_sure_want_to_Delete_group">그룹을 삭제 하시겠습니까 ?</string>
+    <string name="Are_you_sure_want_to_Leave_group">그룹에서 탈퇴 하시겠습니까?</string>
+    <string name="Group_left_successfully">그룹 탈퇴</string>
+    <string name="Group_deleted">그룹이 삭제되었습니다 ...</string>
+
+    <string name="Copy_content">콘텐츠 복사</string>
+    <string name="Copied">복사 됨</string>
+    <string name="Block_Succesfuly">성공 차단 ...</string>
+    <string name="block_message">메시지 차단</string>
+    <string name="Unblock_message">메시지 차단 해제</string>
+
+    <string name="Please_enter_your_group_name">그룹 이름을 입력하십시오</string>
+    <string name="Group_created">그룹이 생성되었습니다</string>
+    <string name="No_internet_connection">인터넷에 연결되지 않음!</string>
+    <string name="Go_settings">이동 설정</string>
+    <string name="online">온라인</string>
+    <string name="follow">따르다</string>
+    <string name="Internet_connected">네트워크 연결됨</string>
+    <string name="Unfollow">따르다</string>
+    <string name="Follow">온라인</string>
+    <string name="New_message">새로운 메시지</string>
+    <string name="are_you_delete_this_message">이 메시지를 삭제 하시겠습니까 ?</string>
+    <string name="are_you_delete_this_conversation">이 대화를 삭제 하시겠습니까 ?</string>
+
+    <string name="Morning">아침</string>
+    <string name="Afternoon">대낮</string>
+    <string name="Evening">저녁</string>
+    <string name="May_this">"할 수 있습니다"</string>
+    <string name="happy">,\n즐거운 시간 되세요</string>
+    <string name="hi">안녕하세요! </string>
+    <string name="recent_converstation">새로운 메시지</string>
+    <string name="password_is_incorrect">이 메시지를 삭제 하시겠습니까</string>
+    <string name="download_image">이미지 다운로드</string>
+    <string name="copy_url_image">URL 이미지 복사</string>
+
+    <string name="profile_account">프로필</string>
+
+</resources>

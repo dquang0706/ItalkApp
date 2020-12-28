@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity">
+    <RelativeLayout
+        android:id="@+id/toolbarre"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_toobar"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/backIv"
+            android:tint="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_left_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/chat"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/worksans_light"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/actionIv"
+            android:tint="@color/blue"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_menu_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/toolbarre"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/groupChatIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_app3"
+                app:civ_circle_background_color="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/groupNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/worksans_light"
+                        android:text="Name"
+                        android:textColor="@color/blackNhat2"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/infoGroupBtn"
+            android:src="@drawable/info_group_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+        <View
+            android:background="@color/greynhat3"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatGroup_Recyclerview"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/row_chat_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:stackFromEnd="true"
+        app:reverseLayout="false"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_above="@id/realativeLayout"
+        android:layout_below="@id/toolbar" />
+    <TextView
+        android:layout_below="@id/toolbar"
+        android:padding="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="3dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@color/blackNhat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/No_internet_connection"
+        android:textAlignment="center"
+        android:id="@+id/ChatConnectionTV"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:id="@+id/realativeLayout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_alignParentTop="true"
+            android:background="@color/greynhat2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+        <LinearLayout
+            android:id="@+id/chat_layout"
+            android:src="@drawable/background_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/attachBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/main"
+                android:background="@color/white"
+                android:src="@drawable/ic_image_chat" />
+            <ImageButton
+                android:id="@+id/microphoneBtn"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:tint="@color/main"
+                android:background="@color/white"
+                android:src="@drawable/ic_mic" />
+            <EditText
+                android:id="@+id/messageEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:fontFamily="@font/mo_me"
+                android:hint="@string/enter_your_message"
+                android:background="@color/white"
+                android:inputType="textCapSentences|textImeMultiLine"
+                android:padding="15dp" />
+
+            <ImageView
+                android:id="@+id/sendBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/main"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@drawable/ic_send_blue"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

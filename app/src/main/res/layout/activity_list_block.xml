@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListBlockActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/background_toobar"
+  >
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_left_grey"
+            android:tint="@color/blackNhat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/list_blocked"
+            android:textColor="@color/blackNhat"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/actionIv"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_menu_grey"
+            android:tint="@color/white" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/greynhat2"/>
+    </RelativeLayout>
+ <androidx.appcompat.widget.SearchView
+     android:id="@+id/searchView"
+     app:queryBackground="@null"
+     android:background="@drawable/background_edt_login"
+     android:layout_below="@id/toolbar"
+     android:layout_marginTop="10dp"
+     android:layout_marginRight="15dp"
+     android:layout_marginLeft="15dp"
+     android:focusable="false"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/noBlockLayout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/blockIv"
+            android:src="@drawable/ic_block_user_grey"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_below="@id/blockIv"
+            android:text="@string/no_account_here"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/greynhat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+      android:layout_below="@id/searchView"
+        android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recyclerViewBlock"
+              tools:listitem="@layout/row_user"
+              android:nestedScrollingEnabled="false"
+              app:stackFromEnd="false"
+              app:reverseLayout="true"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

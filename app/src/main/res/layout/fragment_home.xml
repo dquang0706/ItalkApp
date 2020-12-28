@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greynhat4"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_left_grey"
+            android:tint="@color/greynhat2"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/home"
+            android:textColor="@color/blackNhat2"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/actionIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_search"
+            android:tint="@color/orange50" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greynhat4" />
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        shimmer:duration="800"
+        tools:ignore="MissingConstraints">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/row_placeholder_post" />
+
+            <include layout="@layout/row_placeholder_post" />
+
+            <include layout="@layout/row_placeholder_post" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/statusBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatarIv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/avatar_default" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/avatarIv"
+                        android:fontFamily="@font/mo_me"
+                        android:text="@string/what_are_you_thinking"
+                        android:textColor="@color/greynhat2"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_gallery" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/card"
+                android:id="@+id/timeHelloLayout"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="90dp">
+                <TextView
+                    android:id="@+id/hiTv"
+                    android:text="@string/hi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackNhat2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_toRightOf="@id/hiTv"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/blackNhat2"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/helloTv"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameTv"
+                    android:text="May this afternoon be light, blessed\nenlightened productive and hapy" />
+
+                <ImageView
+                    android:id="@+id/dayTimeIv"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_afternoon" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_below="@id/timeHelloLayout"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:id="@+id/recyclerViewPostHorizontalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/recyclerViewPostHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/row_post_recent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/recyclerViewPostHorizontalLayout"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:reverseLayout="true"
+                    app:stackFromEnd="false"
+                    shimmer:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_post" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

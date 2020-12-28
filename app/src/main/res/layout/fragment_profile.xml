@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:background="@drawable/background_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:tint="@color/blackNhat"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_left_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/profile"
+            android:textSize="27dp"
+            android:textColor="@color/blackNhat2"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/settingLayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="120dp"
+            android:layout_height="53dp">
+            <ImageView
+                android:id="@+id/actionIv"
+                android:tint="@color/blackNhat"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/greynhat2"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"/>
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_gallery_grey" />
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avataIv"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:cropToPadding="true"
+                    android:src="@drawable/avatar_default"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="4dp" />
+                <LinearLayout
+                    android:id="@+id/cameraBtn"
+                    android:layout_gravity="bottom|right"
+                    android:gravity="center"
+                    android:background="@drawable/back_ground_camera"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                  >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic__camera"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                       />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frame"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Nguyễn Văn Quế"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blackNhat2"
+                android:textSize="25sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/chat"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutChat"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/nameTv"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/background_button"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_chat"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chat"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/blockMessageLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_more_grey"
+                        android:tint="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/nameTv"
+                android:id="@+id/realativeVietBai"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/vietBaiTv"
+                    android:text="@string/write_post"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/blackNhat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:id="@+id/relativepost"
+                    android:layout_below="@+id/vietBaiTv"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatarPostIv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/avatar_default" />
+                    <TextView
+                        android:textSize="12dp"
+                        android:fontFamily="@font/mo_me"
+                        android:textColor="@color/greynhat"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/avatarPostIv"
+                        android:text="@string/what_are_you_thinking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:src="@drawable/ic_gallery"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+                <View
+                    android:layout_below="@+id/relativepost"
+                    android:layout_width="match_parent"
+                    android:background="@color/greynhat3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/noPostTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/realativeVietBai"
+                android:gravity="center_horizontal"
+                android:paddingTop="60dp"
+                android:text="This people no post !"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/noPostTv">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    tools:listitem="@layout/row_post"
+                    android:id="@+id/recyclerviewPostost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:nestedScrollingEnabled="false"
+                    app:stackFromEnd="false"
+                    app:reverseLayout="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+
+
+

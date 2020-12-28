@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Italk</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="version_1_0_0">Phiên bản 1.0.0</string>
+
+    <string name="enter_your_email">Nhập email của bạn</string>
+    <string name="enter_your_name">Nhập tên của bạn</string>
+    <string name="enter_your_password">Nhập mật khẩu của bạn</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="name_not_be_emty">Tên không được để trống</string>
+    <string name="Emai_must_right_the_format">Email không hợp lệ</string>
+    <string name="Password_is_at_least_6_characters">Mật khẩu phải từ 6 ký tự</string>
+    <string name="good_job">Hoàn thành !</string>
+    <string name="Error">Lỗi...</string>
+    <string name="chat">Nhắn tin</string>
+    <string name="choose">Chọn</string>
+    <string name="camera">Máy ảnh</string>
+    <string name="gallery">Thư viện</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="enter_your_old_password">Nhập mật khẩu cũ</string>
+    <string name="enter_your_new_password">Nhập mật khẩu mới</string>
+    <string name="cancel">Hủy</string>
+    <string name="update">Cập nhật</string>
+    <string name="enter_your_message">Nhập tin nhắn</string>
+    <string name="comment">Bình luận</string>
+    <string name="enter_your_comment">Nhập bình luận</string>
+    <string name="cofirm">Xác nhận</string>
+    <string name="delete">Xóa</string>
+    <string name="update_name">Cập nhật tên</string>
+    <string name="home">Trang chủ</string>
+    <string name="what_are_you_thinking">Bạn đang nghĩ gì...?</string>
+    <string name="login">ĐĂNG NHẬP</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="notification">Thông báo</string>
+    <string name="write_post">Viết bài</string>
+    <string name="confirm_your_password">Xác nhận mật khẩu</string>
+    <string name="register">ĐĂNG KÝ</string>
+    <string name="setting">Cài đặt</string>
+    <string name="edit_name">Sửa tên</string>
+    <string name="update_password">Đổi mật khẩu</string>
+    <string name="no_notification_here">Không có thông báo nào </string>
+    <string name="see_like">Xem người thích</string>
+    <string name="select">Chọn</string>
+    <string name="list_blocked">Danh sách đã chặn</string>
+    <string name="unblock_succesfuly">Gỡ chặn thành công</string>
+    <string name="unblock_message_this_people">Gỡ chặn tin nhắn người này</string>
+    <string name="block_message_this_people">Chặn tin nhắn người này</string>
+    <string name="enter_friends_need_to_find">Tìm kiếm</string>
+    <string name="update_successful">Cập nhật thành công</string>
+    <string name="update_failed">Lỗi cập nhật</string>
+    <string name="Comment_your_post">Bình luận bài viết của bạn</string>
+    <string name="error">Lỗi...</string>
+    <string name="Comment_failed">Lỗi bình luận</string>
+    <string name="Post_successful">Đăng bài thành công</string>
+    <string name="Please_enable_camera_permissions">Vui lòng bật quyền camera</string>
+    <string name="Please_enable_gallery_permissions">Vui lòng bật quyền thư viện</string>
+    <string name="Please_enter_the_article_description_or_image">Vui lòng nhập mô tả bài viết hoặc ảnh</string>
+    <string name="Loading">Đang xử lí...</string>
+    <string name="Delete">Xóa</string>
+    <string name="Edit">Sửa</string>
+    <string name="View_Detail">Xem trang cá nhân</string>
+    <string name="Delete_successful">Xóa thành công</string>
+    <string name="Like_your_post">thích bài viết của bạn</string>
+    <string name="Please_Enter_comment">Vui lòng nhập bình luận</string>
+    <string name="Comment_successful">Bình luận thành công</string>
+    <string name="Offline_at">Đã Offline lúc : </string>
+    <string name="Please_Enter_your_message">Vui lòng nhập tin nhắn</string>
+    <string name="noSuport">Thiết bị của bạn không hỗ trợ tính năng này</string>
+    <string name="Say_something">Hãy nói</string>
+    <string name="LOGIN">ĐĂNG NHẬP</string>
+    <string name="REGISTER">ĐĂNG KÝ</string>
+    <string name="Sent_a_photo">Gửi một ảnh</string>
+    <string name="Email_cannot_be_empty">Email không được để trống</string>
+    <string name="Login_succesful">Đăng nhập thành công</string>
+    <string name="Login_ailed">Lỗi đăng nhập</string>
+    <string name="Password_must_not_be_empty">Mật khẩu không được bỏ trống</string>
+    <string name="Name_must_be_greater_than_6_characters">Tên phải lớn hơn 6 ký tự</string>
+    <string name="You_clicked_button">Nhấn để đăng nhập</string>
+    <string name="Authentication_failed">Lỗi</string>
+    <string name="Seen">Đã xem</string>
+    <string name="Sent">Đã gửi</string>
+    <string name="Deleted">Đã xóa</string>
+    <string name="You_just_only_delete_your_messages">Bạn chỉ được xóa tin nhắn của bạn</string>
+    <string name="Post">Đăng</string>
+    <string name="select_picture">Chọn hình ảnh</string>
+    <string name="description">Mô tả...</string>
+    <string name="your_status">Trạng thái của bạn...</string>
+    <string name="Search">Tìm kiếm</string>
+    <string name="View_profile">Xem trang cá nhân</string>
+    <string name="Delete_failed">Lỗi</string>
+    <string name="Recover">Xác nhận</string>
+    <string name="Like"> Thích</string>
+    <string name="PeopleLike">Người thích</string>
+    <string name="peoplelikexml">" " Người thích</string>
+    <string name="commentpeoplexml">0 Bình luận</string>
+    <string name="Logout">Đăng xuất</string>
+    <string name="Confirm"> Xác nhận</string>
+    <string name="Are_you_sure">Bạn có chắc chắn không ?</string>
+    <string name="Enter_your_name">Vui lòng nhập tên</string>
+    <string name="Name_must_be_characters">Tên phải là ký tự không nhập số</string>
+    <string name="like_post">Thích bài viết</string>
+    <string name="profile">Trang cá nhân</string>
+    <string name="me">Tôi</string>
+    <string name="friend">Bạn bè</string>
+    <string name="Unblock_Succesfuly">Gỡ chặn thành công</string>
+    <string name="You_can_send_message">Bạn không thể gửi tin nhắn</string>
+    <string name="please_write_something">Vui lòng viết...</string>
+    <string name="done">Xong</string>
+    <string name="Confirm_your_password">Xác nhận mật khẩu</string>
+    <string name="Incorrect">Chấp nhận</string>
+
+    <string name="change_name">Đổi tên </string>
+    <string name="list_user_blocked">Danh sách đã chặn</string>
+    <string name="delete_your_account">Xóa tài khoản của bạn</string>
+    <string name="report_problem">Báo cáo sự cố</string>
+
+    <string name="Do_you_want_delete_this_notification">Bạn có muốn xóa thông báo này không ?</string>
+    <string name="last_day"> ngày trước</string>
+
+    <string name="name">Người dùng</string>
+    <string name="time">Thời gian</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="Please_check_your_mail">Vui lòng kiểm tra email của bạn</string>
+    <string name="Email_does_not_exist">Email không tồn tại</string>
+    <string name="Sending_your_email">Đang gửi vào email của bạn...</string>
+    <string name="account_and_suport">Tài khoản và hỗ trợ</string>
+    <string name="you_have_no_messages_here">Bạn không có cuộc trò chuyện nào</string>
+    <string name="Do_you_want_delete_this_comment">Bạn có muốn xóa bình luận này ?</string>
+
+    <string name="You_not_delete_this_commment">Bạn không thể xóa bình luận này</string>
+    <string name="Send_a_photo">Gửi một ảnh</string>
+    <string name="Send_email">Gửi email</string>
+    <string name="Typing">Đang nhập...</string>
+
+    <string name="not_have_any_comment">Chưa có bình luận nào</string>
+    <string name="please_be_the_first_comment">Hãy là người đâu tiên bình luận</string>
+
+    <string name="this_people_no_status">Không có trạng thái</string>
+    <string name="no_account_here">Không có tài khoản nào trong danh sách</string>
+    <string name="Are_you_want_to_download_this_image">Bạn có muốn tải xuống ?</string>
+    <string name="Download">Tải xuống</string>
+    <string name="detail">Chi tiết</string>
+    <string name="group_name">Tên nhóm</string>
+    <string name="group_role">vai trò nhóm</string>
+    <string name="create_group">Tạo nhóm</string>
+    <string name="Enter_group_name_need_to_find">Nhập tên nhóm cần tìm</string>
+
+
+    <string name="Remove_Admin">Xóa quyền quản trị viên</string>
+    <string name="Remove_User">Xóa khỏi nhóm</string>
+    <string name="Make_Admin">Đặt làm quản trị viên</string>
+    <string name="Add_this_user_into_this_group">Thêm người này vào nhóm ? </string>
+    <string name="Add">Thêm</string>
+    <string name="The_user_is_no_longer_admin">Người dùng không còn là quản trị viên</string>
+    <string name="The_user_is_now_admin">Bây giờ người dùng nay là quản trị viên</string>
+    <string name="Added_successfully">Thêm thành công</string>
+    <string name="Add_member">Thêm thành viên</string>
+    <string name="Creator_of_Groug">Người tạo nhóm...</string>
+
+    <string name="Creator">Người tạo nhóm</string>
+    <string name="Member">Thành viên</string>
+    <string name="Admin">Quản trị viên</string>
+
+    <string name="settings">Cài đặt</string>
+    <string name="info">Thông tin</string>
+    <string name="edit_group">Sửa thông tin nhóm</string>
+    <string name="group_name_require">Tên nhóm là bắt buộc...</string>
+    <string name="group_info_update">Cập nhật thông tin thành công</string>
+    <string name="list_member">Danh sách thành viên</string>
+    <string name="Search_group">Tìm nhóm</string>
+
+    <string name="leave_group">Rời nhóm</string>
+    <string name="change_group_info">Đổi thông tin nhóm</string>
+    <string name="Delete_group">Xóa nhóm</string>
+    <string name="Are_you_sure_want_to_Delete_group">Bạn có muốn xóa nhóm ?</string>
+    <string name="Are_you_sure_want_to_Leave_group">Bạn có muốn rời khỏi nhóm ?</string>
+    <string name="Group_left_successfully">Bạn đã rời nhóm</string>
+    <string name="Group_deleted">Đã xóa nhóm</string>
+    <string name="Copy_content">Sao chép văn bản</string>
+    <string name="Copied">Đã sao chép</string>
+    <string name="block_message">Chặn tin nhắn</string>
+    <string name="Unblock_message">Gỡ chặn</string>
+
+
+    <string name="Block_Succesfuly">Chặn thành công...</string>
+
+    <string name="Please_enter_your_group_name">Nhập tên nhóm</string>
+    <string name="Group_created">Đã tạo nhóm</string>
+    <string name="No_internet_connection">Chưa kết nối mạng</string>
+    <string name="Go_settings">Đi đến cài đặt</string>
+    <string name="online">Đang hoạt động</string>
+    <string name="follow">Đang theo dõi</string>
+    <string name="Internet_connected">Mạng đã kết nối</string>
+
+
+    <string name="Unfollow">Bỏ theo dõi</string>
+    <string name="Follow">Theo dõi</string>
+    <string name="New_message">Tin nhắn mới</string>
+    <string name="are_you_delete_this_message">Bạn chắc chắn xóa tin nhắn này ?</string>
+    <string name="are_you_delete_this_conversation"> Bạn có muốn xóa cuộc trò chuyện này hay không?</string>
+
+
+    <string name="Morning">buổi sáng</string>
+    <string name="Afternoon">buổi chiều</string>
+    <string name="Evening">buổi tối</string>
+    <string name="May_this">Bây giờ là" " </string>
+    <string name="happy">,\nchúc bạn có những phút giây tuyệt vời</string>
+    <string name="hi">Xin chào! </string>
+    <string name="recent_converstation">Trò chuyện gần đây</string>
+    <string name="password_is_incorrect">Mật khẩu xác nhận không khớp</string>
+
+
+    <string name="download_image">Tải hình ảnh</string>
+    <string name="copy_url_image">Sao chép liên kết hình ảnh</string>
+
+    <string name="profile_account">Tài khoản</string>
+
+</resources>

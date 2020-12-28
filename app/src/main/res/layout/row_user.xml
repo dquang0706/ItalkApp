@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/background_item_user">
+    <FrameLayout
+        android:id="@+id/fr"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarIv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:src="@drawable/avatar_default"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/orange50" />
+        <ImageView
+            android:id="@+id/onlineIv"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/avatarIv"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/avatarIv"
+            android:src="@drawable/circle_online" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/fr"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mo_me"
+            android:text="Nguyễn Văn Quế"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/emailTvrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:fontFamily="@font/worksans_regular"
+            android:text="nguyenvanque025@gmail.com"
+            android:textColor="@color/grey" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_toRightOf="@id/fr"
+        android:layout_alignParentBottom="true"
+        android:background="#EAEAEA" />
+
+</RelativeLayout>

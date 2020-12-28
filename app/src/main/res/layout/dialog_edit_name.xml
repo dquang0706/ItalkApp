@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_transparent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mnametv"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/update_name"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_below="@id/mnametv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt2"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_person_white"
+            android:drawableStart="@drawable/ic_person_white"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="@string/enter_your_name"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/greynhat3"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/cancelBtn"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/cancelTv"
+                    android:layout_margin="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:text="@string/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="@color/greynhat3"
+                android:layout_width="0.2dp"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:id="@+id/updateBtn"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/updatetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/update"
+                    android:textColor="@color/blackNhat2"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

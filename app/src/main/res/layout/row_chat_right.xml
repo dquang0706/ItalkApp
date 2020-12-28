@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/messageLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:src="@drawable/avatar_default"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            app:civ_circle_background_color="@null"
+            android:layout_height="50dp"/>
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/timeTv"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:textSize="11dp"
+            android:fontFamily="@font/mo_li"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="02/03/2020 05:30PM"
+            android:textColor="@color/greynhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/messageTv"
+            android:padding="15dp"
+            android:text="His message"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mo_re"
+            android:layout_toRightOf="@id/timeTv"
+            android:textStyle="bold"
+            android:background="@drawable/background_row_chat_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/messageIv"
+            android:layout_below="@id/messageTv"
+            android:padding="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:src="@drawable/ic_gallery_grey"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/isSeendTv"
+        android:textSize="11dp"
+        android:paddingRight="30dp"
+        android:fontFamily="@font/mo_li"
+        android:text="delivered"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

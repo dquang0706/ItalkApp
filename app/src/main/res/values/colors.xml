@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="main">#f76971</color>
+    <color name="mainB">#FA4D56</color>
+    <color name="blue">#08B1E4</color>
+    <color name="blueN">#77BCE6</color>
+    <color name="blueB">#001E32</color>
+    <color name="bluenhat">#E8F6FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="blackNhat">#2B2B2B</color>
+    <color name="blackNhat2">#1f1f1f</color>
+    <color name="grey">#5E5E5E</color>
+    <color name="greynhat">#828181</color>
+    <color name="grey80">#bfbfbf</color>
+    <color name="greynhat2">#C8C8C8</color>
+    <color name="greynhat3">#E6E6E6</color>
+    <color name="greynhat4">#E8E8E8</color>
+    <color name="grey20">#F6F6F6</color>
+    <color name="red">#F62828</color>
+    <color name="pink">#FF4B4B</color>
+    <color name="pinkN">#FF9696</color>
+    <color name="background_layout">#FAFAFA</color>
+    <color name="orange">#E8281A</color>
+    <color name="orange50">#f76971</color>
+    <color name="green">#44D54F</color>
+
+
+    <color name="placeholder_bg">#DADADA</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+
+    <color name="GreyTransparent">#E6ffffff</color>
+
+    <color name="startcolortoolbar">#3FAADD</color>
+    <color name="endcolortoolbar">#43A047</color>
+
+</resources>

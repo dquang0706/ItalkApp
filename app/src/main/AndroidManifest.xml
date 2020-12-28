@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.italkapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".ListMemberActivity" />
+        <activity android:name=".EditGroupActivity" />
+        <activity android:name=".InfoGroupActivity" />
+        <activity android:name=".GroupMemberAddActivity" />
+        <activity android:name=".GroupChatActivity" />
+        <activity android:name=".CreateGroupActivity" />
+        <activity android:name=".ListBlockActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".PostLikeByActivity" />
+        <activity android:name=".HisProfileActivity" />
+        <activity android:name=".AddPostActivity" />
+        <activity android:name=".LoginAndRegisterActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".notification.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_app" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/blue" />
+    </application>
+
+</manifest>

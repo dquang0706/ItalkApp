@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ChatListContainerFragment">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/background_toobar"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/avatar_default"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/chat"
+            android:textColor="@color/blackNhat2"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+      <TextView
+          android:text="Tạo nhóm"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          android:visibility="gone"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dp"
+          android:textColor="@color/blackNhat2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/createGroupBtn"
+            android:src="@drawable/ic__add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_menu_grey"
+            android:tint="@color/white"
+            android:visibility="gone" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/greynhat2"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/chatTabLayout"
+            app:tabTextColor="@color/black"
+            android:elevation="30dp"
+            android:minHeight="?attr/actionBarSize"
+            app:tabIndicatorColor="@color/greynhat3"
+            >
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/chatViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">        
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

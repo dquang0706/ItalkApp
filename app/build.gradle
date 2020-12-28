@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.italkapp"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation 'com.android.support:design:29.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.google.api-client:google-api-client:1.22.0'
+    implementation 'com.google.http-client:google-http-client-gson:1.22.0'
+
+
+    // sweetalertdialog
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    // thư viện load layout khi chưa có dữ liệu
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    implementation 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+
+
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}

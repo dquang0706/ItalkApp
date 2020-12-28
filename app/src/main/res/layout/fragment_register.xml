@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".fragment.RegisterFragment">
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_edt_login"
+        android:drawableLeft="@drawable/ic_person_grey"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_your_name"
+        android:padding="14dp"
+        android:textColor="@color/blackNhat2"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEt"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_edt_login"
+        android:drawableLeft="@drawable/ic_email_grey"
+        android:drawablePadding="10dp"
+        android:textColor="@color/blackNhat2"
+        android:hint="@string/enter_your_email"
+        android:padding="14dp"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordEtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEt"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edt_login"
+            android:drawableStart="@drawable/ic_key_grey"
+            android:drawableLeft="@drawable/ic_key_grey"
+            android:drawablePadding="10dp"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:textColor="@color/blackNhat2"
+            android:textColorHint="@color/grey"
+            android:textSize="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cfpasswordEtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEtl"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/cfpasswordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edt_login"
+            android:drawableStart="@drawable/ic_key_grey"
+            android:drawableLeft="@drawable/ic_key_grey"
+            android:drawablePadding="10dp"
+            android:hint="@string/confirm_your_password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:textColor="@color/blackNhat2"
+            android:textColorHint="@color/grey"
+            android:textSize="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cfpasswordEtl"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:textStyle="bold"
+        android:text="@string/register"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

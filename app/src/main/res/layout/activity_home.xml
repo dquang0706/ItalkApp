@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_layout"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line">
+
+    </FrameLayout>
+<LinearLayout
+    android:id="@+id/line"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/greynhat3"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_bottom_appbar">
+     <LinearLayout
+         android:id="@+id/profileBtn"
+         android:layout_weight="1"
+         android:gravity="center_vertical|center_horizontal"
+         android:orientation="vertical"
+         android:layout_width="0dp"
+         android:layout_height="match_parent">
+
+         <ImageView
+             android:id="@+id/profileIv"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:src="@drawable/ic_profile" />
+         <TextView
+             android:id="@+id/profileTv"
+             android:text="@string/me"
+             android:textSize="12dp"
+             android:visibility="gone"
+             android:textColor="@color/black"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+     </LinearLayout>
+        <LinearLayout
+            android:id="@+id/friendBtn"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/userIv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_friend" />
+            <TextView
+                android:id="@+id/friendTv"
+                android:text="@string/friend"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:textColor="@color/blackNhat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/homeIv"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:civ_border_width="1dp"
+            app:civ_border_overlay="true"
+            app:civ_border_color="@color/greynhat4"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_home" />
+
+
+        <LinearLayout
+            android:id="@+id/chatBtn"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/chatListIv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_chat" />
+            <TextView
+                android:id="@+id/chatTv"
+                android:text="@string/chat"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:textColor="@color/blackNhat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/notificationBtn"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/notificationIv"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/ic_notification" />
+                    <TextView
+                        android:id="@+id/notificationTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notification"
+                        android:visibility="gone"
+                        android:textColor="@color/blackNhat2"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/notificationCountTv"
+                    android:text="0"
+                    android:layout_gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:background="@drawable/background_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupMemberAddActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_left_grey"
+            android:tint="@color/blackNhat2" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/groupNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/group_name"
+            android:textColor="@color/blackNhat2"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/groupRoleTv"
+            android:layout_below="@+id/groupNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/group_role"
+            android:textColor="@color/greynhat"
+            android:textSize="12sp" />
+
+        <View
+            android:background="@color/greynhat4"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0.3dp"/>
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        app:queryBackground="@null"
+        android:background="@drawable/background_edt_login"
+        app:queryHint="Nhập tên bạn bè cần tìm" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchView"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_user_group" />
+</RelativeLayout>

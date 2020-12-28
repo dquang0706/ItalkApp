@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1046410095121",
+    "firebase_url": "https://italkapp-db573.firebaseio.com",
+    "project_id": "italkapp-db573",
+    "storage_bucket": "italkapp-db573.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046410095121:android:ed3ddab79b3ef5114b1fb0",
+        "android_client_info": {
+          "package_name": "com.example.italkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046410095121-bjmo78u3iappmh2rjl0g57utd0iq8e0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.italkapp",
+            "certificate_hash": "7f0bd112b5b2209f4dafd4f5905108ce1b400b81"
+          }
+        },
+        {
+          "client_id": "1046410095121-k4s44dto6jcj9eka3c8o5clblgbie7ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdyWFbX2knBBWXZFd_X6kqtSfk0C1XVrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046410095121-k4s44dto6jcj9eka3c8o5clblgbie7ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
